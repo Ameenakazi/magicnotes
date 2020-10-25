@@ -1,0 +1,268 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+:root{
+    font-size: 16px;
+    --text-primary:#b6b6b6;
+    --text-secondary:#ececec;
+    --bg-primary:#23232e;
+    --bg-secondary:#141418;
+    --transition-speed:600ms;
+
+}
+
+body::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track{
+    color: rgb(65, 56, 45);
+}
+
+body::-webkit-scrollbar-thumb{
+    background: rgb(65, 56, 45);
+}
+
+
+body{
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    animation-name: bgcolor;
+    animation-duration: 0.1s;
+    animation-iteration-count: infinite;
+   
+
+}
+
+main{
+    /* relative to root element 16*5 */
+    margin-left: 5rem;
+    padding: 1rem;
+}
+
+.navbar{
+    z-index: 1;
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-color: var(--bg-primary);
+    transition: 400ms ease;
+}
+
+.navbar-nav{
+    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-item{
+    width: 100%;
+}
+
+.nav-item:last-child{
+    /* margin auto gives max margin */
+    margin-top:auto ;
+}
+
+.nav-link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    color: var(--text-primary);
+    filter: grayscale(100%) opacity(0.8);
+    text-decoration: none;
+    transition: var(--transition-speed);
+}
+
+.nav-link:hover{
+    filter: grayscale(0%) opacity(1);
+    background: var(--bg-secondary);
+    color: var(--text-secondary);
+}
+
+.link-text{
+    display: none;
+    margin-left: 1rem;
+}
+
+.nav-link svg{
+    min-width: 2rem; 
+     margin: 0 1.5rem;
+}
+
+.navbar:hover{
+    width: 15rem;
+}
+
+.navbar:hover .link-text{
+    display: block;
+}
+
+svg{
+    fill: #ff7eee;
+    
+    transition: var(--transition-speed);
+}
+
+
+.logo{
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+    letter-spacing: 0.3ch;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    width: 100%;
+}
+
+.logo svg{
+    transform: rotate(0deg);
+    transition: transform var(--transition-speed);
+}
+
+
+.navbar:hover .logo svg{
+    transform: rotate(180deg);
+    transition: var(--transition-speed);
+}
+main{
+    margin-left: 5rem;
+    padding-left: 1rem;
+   
+   
+}
+@keyframes bgcolor{
+    0%{
+        background:linear-gradient(30deg,rgb(238, 217, 124),rgb(127, 229, 233),rgb(117, 247, 84),rgb(236, 109, 109));
+
+        
+    }
+
+    100%{
+        background:linear-gradient(-30deg,rgb(233, 99, 75),rgb(143, 106, 245),rgb(214, 193, 193),rgb(243, 113, 163));
+    }
+    
+}
+
+
+body{
+    background-image: url(../images/db.jpg);
+}
+
+.header{
+    background-image: url(../images/red\ bg.jpg);
+    height: 20vh;
+    text-align: center;
+}
+
+
+.c1,.c2,.c3,.c4,.c5,.c6,.c7{
+    position: relative;
+    background: rgb(255, 162, 128);
+    width: 300px;
+    float: left;
+    border-radius: 10px;
+}
+.c1{
+    margin-left: 100px;
+}
+.h1{
+    padding-top: 10px;
+    padding-left: 45px;
+}
+
+.co1 h4{
+    padding: 10px;
+font-family: Raleway;
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+text-align: justify;
+
+color: #000000;
+
+}
+
+.co1 h2{
+  padding-left: 100px;
+}
+
+.f1{
+    padding-top: 10px;
+    padding-left: 80px;
+    padding-bottom: 10px;
+    padding-right: 35px;
+}
+
+.c1:hover,.c2:hover,.c3:hover,.c4:hover,.c5:hover,.c6:hover,.c7:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px  8px 4px rgb(203, 193, 238);
+}
+
+.f1 button{
+    border-radius: 12px;
+    background-color:burlywood;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.f1 button:hover{
+    text-shadow: 4px 4px 8px rgb(232, 248, 3);
+    font-weight:bold;
+}
+.c2{
+   
+margin-left: 200px;
+
+}
+
+.c3{
+  margin-left: 150px;
+}
+.c3 h2,.c6 h2,.c7 h2{
+    padding-left: 70px;
+}
+
+.s2{
+   
+    text-align: justify;
+    margin-top: 50px;
+  
+}
+
+.c4{
+    margin-left: 75px;
+}
+.c5{
+    margin-left: 35px;
+}
+.c6{
+    margin-left: 35px;
+}
+.c7{
+    margin-left: 35px;
+}
+.sn2,.sn3{
+    text-align: center;
+    margin-top: 600px;
+    color:white;
+   
+}
+.sn1{
+    text-align: center;
+    color:white;
+}
