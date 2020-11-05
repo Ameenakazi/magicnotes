@@ -1,6 +1,6 @@
 *{
-    margin: 0px;
-    padding: 0px;
+    margin: 0rem;
+    padding: 0rem;
 }
 
 
@@ -156,113 +156,178 @@ main{
 }
 
 
-body{
-    background-image: url(../images/db.jpg);
+main{
+    padding: 0rem;
+    margin: 0rem;
+    background-color: #CFB9EE;
+    background-size: cover;
 }
 
 .header{
-    background-image: url(../images/red\ bg.jpg);
-    height: 20vh;
+    background-image: url(../images/bgtop.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height:25vh;
+    width: 100%;
     text-align: center;
+    z-index: -1;
+  
+
 }
 
+.header ul{
+    padding: 0rem;
+    font-size: 2rem;
+    font-weight: 100;
+    text-decoration: none;
+    font-family: 'Bree Serif', serif;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+   
+}
+.header li a{
+    text-decoration: none;
+    color: rgb(0, 100, 131);
+    
+    
+}
+.header li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding-left: 5rem;
+}
+.header h1{
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    color: rgb(42, 60, 126);
+}
+#sem7 h1,#sem8 h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+    color: darkslategrey;
+    font-weight: normal;
+    font-family: 'Bree Serif', serif;
+    text-decoration: underline;
+}
+.s1{
+    
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-auto-rows: auto;
+grid-gap: 2rem;
+}
+.s2{
+    
+    display: grid;
+   grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    grid-gap: 2rem;
+    }
 
-.c1,.c2,.c3,.c4,.c5,.c6,.c7{
-    position: relative;
-    background: rgb(255, 162, 128);
-    width: 300px;
-    float: left;
-    border-radius: 10px;
+.section-grid{
+    margin-left: 10rem;
 }
 .c1{
-    margin-left: 100px;
+    background-image: linear-gradient( #400751, #3d3872, #445c89, #5f7d98, #49aee0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width:80%;
+    border-radius: 10px;
+    transition:all 500ms;
 }
 .h1{
-    padding-top: 10px;
-    padding-left: 45px;
+    padding: 1rem;
 }
 
 .co1 h4{
-    padding: 10px;
-font-family: Raleway;
+    padding: 1rem;
+    font-family: 'Vollkorn', serif;
 font-style: normal;
-font-weight: 300;
-font-size: 16px;
+font-weight: 200;
+font-size:1.2rem;
 line-height: 19px;
 text-align: justify;
-
-color: #000000;
+color:rgb(8, 51, 51);
 
 }
 
 .co1 h2{
-  padding-left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding: 0.5rem;
+   font-size: 1.8rem;
+  font-weight: normal;
+   font-family: 'Bree Serif', serif;
+   color: rgb(8, 51, 51);
+
 }
 
 .f1{
-    padding-top: 10px;
-    padding-left: 80px;
-    padding-bottom: 10px;
-    padding-right: 35px;
+   padding: 1rem;
 }
 
-.c1:hover,.c2:hover,.c3:hover,.c4:hover,.c5:hover,.c6:hover,.c7:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px  8px 4px rgb(203, 193, 238);
+.c1:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 0px  8px 4px rgb(92, 51, 241);
+    transform: scale(1.05);
 }
 
 .f1 button{
     border-radius: 12px;
-    background-color:burlywood;
+    height: 3rem;
+    width: 8rem;
+    background-color:rgb(0, 46, 83);
     color: rgb(255, 255, 255);
-    padding: 15px 32px;
+    font-family: 'Bree Serif', serif;
+   
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .f1 button:hover{
     text-shadow: 4px 4px 8px rgb(232, 248, 3);
     font-weight:bold;
 }
-.c2{
-   
-margin-left: 200px;
-
-}
-
-.c3{
-  margin-left: 150px;
-}
-.c3 h2,.c6 h2,.c7 h2{
-    padding-left: 70px;
-}
-
-.s2{
-   
-    text-align: justify;
-    margin-top: 50px;
-  
-}
-
-.c4{
-    margin-left: 75px;
-}
-.c5{
-    margin-left: 35px;
-}
-.c6{
-    margin-left: 35px;
-}
-.c7{
-    margin-left: 35px;
-}
-.sn2,.sn3{
-    text-align: center;
-    margin-top: 600px;
-    color:white;
-   
-}
 .sn1{
+    padding: 0rem;
+    margin: 1.5rem;
+    text-align: center;
+    color:#4A4453;
+    font-family: 'Vollkorn', serif;
+font-style: normal;
+font-weight: bold;
+
+}
+
+@media screen and (max-width: 600px) {
+    .s1 {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+    .c1{
+        margin-top: 1.5rem;
+    }
+
+  
+  .sn1{
+    padding: 0.5rem;
+    margin: 3.5rem;
     text-align: center;
     color:white;
+}
+.h1 img{
+    padding: 1rem;
+}
 }
