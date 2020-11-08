@@ -219,18 +219,12 @@ main{
     text-decoration: underline;
 }
 .s1{
-    
 display: grid;
-grid-template-columns: repeat(3, 1fr);
-grid-auto-rows: auto;
-grid-gap: 2rem;
-}
-.s2{
-    
-    display: grid;
-   grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+   grid-template-columns: repeat(auto-fill,minmax(325px,1fr));
     grid-gap: 2rem;
+    grid-auto-rows: auto;
     }
+}
 
 .section-grid{
     margin-left: 10rem;
